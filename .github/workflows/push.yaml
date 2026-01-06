@@ -22,7 +22,7 @@ jobs:
         run: go test -v ./...
 
       - name: Build
-        run: go build -o parcel-tracker main.go parcel.go
+        run: go build -o main main.go parcel.go
 
   deploy:
     name: Push Docker image to Docker Hub
